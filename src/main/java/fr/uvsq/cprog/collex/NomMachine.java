@@ -8,7 +8,7 @@ public class NomMachine implements Comparable<NomMachine> {
   private final String nom;
   private final String domaine;
 
-  /** Constructor. */
+  /** constructeur. */
   public NomMachine(String nomComplet) {
     if (nomComplet == null || !nomComplet.contains(".")) {
       throw new IllegalArgumentException("Nom de machine invalide : " + nomComplet);

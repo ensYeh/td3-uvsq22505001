@@ -7,11 +7,11 @@ public class DnsItem {
   private final AdresseIp adresseIp;
   private final NomMachine nomMachine;
 
-  /** Constructor. */
+  /** constructeur. */
   public DnsItem(AdresseIp adresseIp, NomMachine nomMachine) {
     if (adresseIp == null || nomMachine == null) {
       throw new IllegalArgumentException(
-          "L'adresse IP et le nom de machine ne peuvent pas etre null");
+          "L'@IP et le nom de machine ne peuvent pas etre null");
     }
     this.adresseIp = adresseIp;
     this.nomMachine = nomMachine;
